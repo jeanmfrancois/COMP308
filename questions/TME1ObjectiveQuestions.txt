@@ -1,0 +1,29 @@
+TME 1 Objective Questions
+
+Unit 1
+Q:
+What is the entry point for any Java application?
+
+A:
+The entry point for any Java Application is the main method, public static void main(String[] args).
+
+Unit 2
+Q:
+What are the functions of the static keyword? (See TIJ pages 76 to 78.)
+
+A:
+// TODO
+
+Unit 3
+Q:
+How is the keyword this used in Java? (See TIJ pages 167 to 168.)
+
+A:
+// TODO
+
+Unit 4
+Q:
+How does a method in a derived class affect a method in a base class with the same name but a different signature? (See TIJ pages 255 to 256.)
+
+A:
+// TODO
