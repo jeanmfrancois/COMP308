@@ -1,0 +1,38 @@
+Program 1
+
+Write a class called Circle which has two constructors. The first constructor (default constructor) does not take any parameter and supplies default values for the coordinates and the radius. The second constructor takes three doubles as parameters corresponding to the X and Y coordinates and the radius. The class must include these methods:
+
+public double circumference() ? returns the circumference of the circle.
+public double area() ? returns the area of the circle.
+public void setRadius(double r) ? is called in the constructor and checks the radius against a maximum. If the radius is greater than the maximum, setRadius resets it to the maximum (using the ternary conditional operator). You may set your own maximum value.
+public void printAttributes() ? prints the coordinates, the radius, the circumference, and the area.
+public boolean isInside(double x, double y) ? return true if a point represented in the parameters falls inside the circle, false otherwise.
+public void move(int x, int y) ? moves the origin by a specified amount.
+
+
+Program 2
+
+Write a class called FullName that represents a person?s full name. It must have separate fields for title (e.g., Mr., Mrs., Ms.), first name, middle name, and last name. Override the toString() method to return a nicely formatted name. Create as many methods as you think necessary.
+
+Write a class called MailingAddress that represents a mailing address. It must have separate fields for a FullName object, street address, city, province and postal code. Other than FullName all other fields are Strings. Override the toString() method to return a nicely formatted address. Create as many methods as you think necessary.
+
+Write a class called ShippingLabel that consists of ship-from and ship-to MailingAddress objects. Write a single method that prints the label to the console. Use these statements in the method:
+
+ShippingLabel label = new ShippingLabel(... your parameter list ...);
+System.out.println(label);
+Write a simple test program in the main method of ShippingLabel to test the above classes.
+
+
+Program 3
+
+Complete exercise 5 on page 286 of TIJ.
+
+Exercise 5: (1) Starting from Exercise 1, add a wheels( ) method in Cycle, which returns the number of wheels. Modify ride( ) to call wheels( ) and verify that polymorphism works.
+
+
+Program 4
+
+Complete exercise 10 on page 320 of TIJ.
+
+Exercise 10: (3) Modify Music5.java by adding a Playable interface. Move the play( ) declaration from Instrument to Playable. Add Playable to the derived classes by including it in the implements list. Change tune( ) so that it takes a Playable instead of an Instrument.
+
