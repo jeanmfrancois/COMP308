@@ -26,4 +26,6 @@ RemoteSystemsTempFiles/*
 # Eclipse Project's Settings
 */.settings
 
+# Temp Save Generated Files
+~*.xlsx
 
