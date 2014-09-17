@@ -10,3 +10,20 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# RemoteSystemsTempFiles
+RemoteSystemsTempFiles/*
+
+# Eclipse Settings
+.metadata/*
+
+# Eclipse Project's Classpath Info
+*/.classpath
+
+# Eclipse Project's Details
+*/.project
+
+# Eclipse Project's Settings
+*/.settings
+
+
