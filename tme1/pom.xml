@@ -13,26 +13,26 @@
 <profile>
       <id>all</id>
       <activation><activeByDefault>true</activeByDefault></activation>
-      <modules> <module>program1</module> <module>program2</module> <module>program3</module> <module>program4</module> </modules>
+      <modules> <module>../program1</module> <module>../program2</module> <module>../program3</module> <module>../program4</module> </modules>
     </profile>
 <profile>
       <id>program1</id>
-      <modules><module>program1</module></modules>
+      <modules><module>../program1</module></modules>
     </profile>
 
 <profile>
       <id>program2</id>
-      <modules><module>program2</module></modules>
+      <modules><module>../program2</module></modules>
     </profile>
 
 <profile>
       <id>program3</id>
-      <modules><module>program3</module></modules>
+      <modules><module>../program3</module></modules>
     </profile>
 
 <profile>
       <id>program4</id>
-      <modules><module>program4</module></modules>
+      <modules><module>../program4</module></modules>
     </profile>
 </profiles>
 

@@ -5,6 +5,7 @@
 		<groupId>com.jfbuilds.tme1</groupId>
 		<artifactId>parent</artifactId>
 		<version>1.0</version>
+		<relativePath>../tme1</relativePath>
 	</parent>
 	<artifactId>program1</artifactId>
 	<version>1.0-SNAPSHOT</version>
