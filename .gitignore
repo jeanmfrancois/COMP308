@@ -29,3 +29,6 @@ RemoteSystemsTempFiles/*
 # Temp Save Generated Files
 ~*.xlsx
 
+# Log Files
+*.log
+

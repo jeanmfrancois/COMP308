@@ -1,4 +1,4 @@
-Program 1
+Program 1: 
 
 Write a class called Circle which has two constructors. The first constructor (default constructor) does not take any parameter and supplies default values for the coordinates and the radius. The second constructor takes three doubles as parameters corresponding to the X and Y coordinates and the radius. The class must include these methods:
 
@@ -8,6 +8,14 @@ public void setRadius(double r) ? is called in the constructor and checks the ra
 public void printAttributes() ? prints the coordinates, the radius, the circumference, and the area.
 public boolean isInside(double x, double y) ? return true if a point represented in the parameters falls inside the circle, false otherwise.
 public void move(int x, int y) ? moves the origin by a specified amount.
+
+public Circle()
+public double circumference()
+public double area()
+public void setRadius(double r)
+public void printAttributes()
+public boolean isInside(double x, double y)
+public void move(int x, int y)
 
 
 Program 2
