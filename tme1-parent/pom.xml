@@ -2,7 +2,6 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                              http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
 	<groupId>com.jfbuilds.tme1</groupId>
 	<artifactId>parent</artifactId>
 	<packaging>pom</packaging>
@@ -27,21 +26,18 @@
 				<module>../program1</module>
 			</modules>
 		</profile>
-
 		<profile>
 			<id>program2</id>
 			<modules>
 				<module>../program2</module>
 			</modules>
 		</profile>
-
 		<profile>
 			<id>program3</id>
 			<modules>
 				<module>../program3</module>
 			</modules>
 		</profile>
-
 		<profile>
 			<id>program4</id>
 			<modules>
@@ -49,9 +45,6 @@
 			</modules>
 		</profile>
 	</profiles>
-
-
-
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -65,8 +58,6 @@
 				</plugin>
 			</plugins>
 		</pluginManagement>
-
-
 		<resources>
 			<resource>
 				<directory>../properties</directory>
@@ -76,14 +67,12 @@
 				</includes>
 			</resource>
 		</resources>
-
 	</build>
-
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
+			<version>4.8.1</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -92,5 +81,4 @@
 			<version>1.2.17</version>
 		</dependency>
 	</dependencies>
-
 </project>
