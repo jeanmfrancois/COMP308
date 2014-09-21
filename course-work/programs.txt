@@ -9,15 +9,6 @@ public void printAttributes() ? prints the coordinates, the radius, the circumfe
 public boolean isInside(double x, double y) ? return true if a point represented in the parameters falls inside the circle, false otherwise.
 public void move(int x, int y) ? moves the origin by a specified amount.
 
-public Circle()
-public double circumference()
-public double area()
-public void setRadius(double r)
-public void printAttributes()
-public boolean isInside(double x, double y)
-public void move(int x, int y)
-
-
 Program 2
 
 Write a class called FullName that represents a person?s full name. It must have separate fields for title (e.g., Mr., Mrs., Ms.), first name, middle name, and last name. Override the toString() method to return a nicely formatted name. Create as many methods as you think necessary.

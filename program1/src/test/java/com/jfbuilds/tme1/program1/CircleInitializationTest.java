@@ -13,7 +13,6 @@ package com.jfbuilds.tme1.program1;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-import org.apache.log4j.Logger;
 
 /**
  * CircleInitializationTest (description of class)
@@ -29,14 +28,12 @@ import org.apache.log4j.Logger;
  */
 public class CircleInitializationTest {
 	
-	private static final Logger log = Logger.getLogger(CircleInitializationTest.class);
-
 	/**
 	 * Test method for {@link com.jfbuilds.tme1.program1.Circle#Circle()}.
 	 */
 	@Test
 	public void testCircle() {
-		log.info("Testing the creation of a default Circle Initialization:");
+		CircleTests.log.info("Testing the creation of a default Circle Initialization:");
     	Circle circle1 = new Circle();
     	circle1.printAttributes();
         assertTrue( true );
@@ -47,7 +44,7 @@ public class CircleInitializationTest {
 	 */
 	@Test
 	public void testCircleDoubleDoubleDouble() {
-    	log.info("Testing the creation of a Unique Circle Initialization:");
+    	CircleTests.log.info("Testing the creation of a Unique Circle Initialization:");
     	Circle circle2 = new Circle(10,10,5);
     	circle2.printAttributes();
     	assertTrue( true );

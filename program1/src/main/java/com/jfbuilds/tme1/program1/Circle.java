@@ -69,7 +69,6 @@ public class Circle implements CircleInterface {
 	/* (non-Javadoc)
 	 * @see com.jfbuilds.tme1.program1.CircleInterface#circumference()
 	 */
-	@Override
 	public double circumference() {
 		double diameter = 2 * r;
 		double circumference = Math.PI * diameter;
@@ -79,9 +78,7 @@ public class Circle implements CircleInterface {
 	/* (non-Javadoc)
 	 * @see com.jfbuilds.tme1.program1.CircleInterface#area()
 	 */
-	@Override
 	public double area() {
-
 		double area = (Math.PI * Math.sqrt(r));
 		return area;
 	}
@@ -89,18 +86,13 @@ public class Circle implements CircleInterface {
 	/* (non-Javadoc)
 	 * @see com.jfbuilds.tme1.program1.CircleInterface#setRadius(double)
 	 */
-	@Override
 	public void setRadius(double r) {
-		if(r < MAX_RADIUS)
-			this.r = r;
-		else
-			this.r = MAX_RADIUS;
+		this.r = r < MAX_RADIUS ?  r : MAX_RADIUS;
 	}
 
 	/* (non-Javadoc)
 	 * @see com.jfbuilds.tme1.program1.CircleInterface#printAttributes()
 	 */
-	@Override
 	public void printAttributes() {
 		System.out.println("Coordinates:(" + this.x + ", " + this.y + ")");
 		System.out.println("Radius:" + this.r);
@@ -111,7 +103,6 @@ public class Circle implements CircleInterface {
 	/* (non-Javadoc)
 	 * @see com.jfbuilds.tme1.program1.CircleInterface#isInside(double, double)
 	 */
-	@Override
 	public boolean isInside(double x, double y) {
 		if ((Math.sqrt(x - this.x) + Math.sqrt(y - this.y)) < Math.sqrt(r))
 			return true;
@@ -122,7 +113,6 @@ public class Circle implements CircleInterface {
 	/* (non-Javadoc)
 	 * @see com.jfbuilds.tme1.program1.CircleInterface#move(int, int)
 	 */
-	@Override
 	public void move(int x, int y) {
 		this.x = x;
 		this.y = y;		
@@ -131,11 +121,10 @@ public class Circle implements CircleInterface {
 	/* (non-Javadoc)
 	 * @see com.jfbuilds.tme1.program1.CircleInterface#move(double, double)
 	 */
-	@Override
 	public void move(double x, double y) {
 		this.x = x;
 		this.y = y;
 	}
 	
-	
+
 }
