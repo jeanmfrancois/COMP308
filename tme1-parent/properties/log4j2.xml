@@ -42,7 +42,7 @@
 		<Logger name="com.jfbuilds.tme1.program4.InstrumentsTests" level="debug">
 			<AppenderRef ref="file-program4" />
 		</Logger>
-		<Root level="trace">
+		<Root level="warn">
 		    <AppenderRef ref="file-root" />
 			<AppenderRef ref="console" />
 		</Root>

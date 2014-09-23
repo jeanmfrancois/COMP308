@@ -26,17 +26,17 @@ package com.jfbuilds.tme1.program1;
  */
 public interface CircleInterface {
 	
-	 /*
+	/**
 	 * Circumference of the circle
 	 */
 	public double circumference();
 	
-	/*
+	/**
 	 * Area of the circle
 	 */
 	public double area();
 	
-	/*
+	/**
 	 * Checks the radius against a maximum. 
 	 * If the radius is greater than the maximum, resets it to the maximum 
 	 * (using the ternary conditional operator)
@@ -45,12 +45,13 @@ public interface CircleInterface {
 	 */
 	public void setRadius(double r);
 	
-	/*
+	/**
 	 * Prints the coordinates, the radius, the circumference, and the area
+	 * using log4j2 with info level logging 
 	 */
 	public void printAttributes();
 	
-	/*
+	/**
 	 * Checks if a point represented in the parameters falls inside the circle
 	 * 
 	 * @param x horizontal point coordinate
@@ -58,7 +59,7 @@ public interface CircleInterface {
 	 */
 	public boolean isInside(double x, double y);
 	
-	/*
+	/**
 	 * Moves the origin of the circle by a specified int type amount
 	 * 
 	 * @param x horizontal point coordinate
@@ -66,7 +67,7 @@ public interface CircleInterface {
 	 */
 	public void move(int x, int y);
 	
-	/*
+	/**
 	 * Moves the origin of the circle by a specified double type amount 
 	 * 
 	 * @param x horizontal point coordinate

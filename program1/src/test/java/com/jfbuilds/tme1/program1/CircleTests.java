@@ -30,7 +30,7 @@ import org.junit.runners.Suite.SuiteClasses;
  *
  */
 @RunWith(Suite.class)
-@SuiteClasses({ CircleInitTest.class, CircumferenceTest.class})
+@SuiteClasses({ CircleTest.class})
 public class CircleTests {
-	public static final Logger log = LogManager.getLogger(CircleTests.class.getName());
+	public static final Logger log = LogManager.getLogger(CircleTests.class);
 }
