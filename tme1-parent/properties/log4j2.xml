@@ -1,70 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="warn" strict="true" name="DefaultXMLConfig">
-  <Properties>
-    <Property name="filename">logs/tme1-logging.log</Property>
-  </Properties>
-  <!-- <Filter type="ThresholdFilter" level="trace"/> -->
- 
-  <Appenders>
-    <Appender type="Console" name="console">
-      <Layout type="PatternLayout" pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} L-%L %msg%n"/>
-      <Filters>
-        <!--  <Filter type="MarkerFilter" marker="FLOW" onMatch="DENY" onMismatch="NEUTRAL"/>
-        <Filter type="MarkerFilter" marker="EXCEPTION" onMatch="DENY" onMismatch="ACCEPT"/>-->
-      </Filters>
-    </Appender>
-    <!--<Appender type="Console" name="FLOW">
-      <Layout type="PatternLayout" pattern="%C{1}.%M %m %ex%n"/> // class and line number //
-      <Filters>
-        <Filter type="MarkerFilter" marker="FLOW" onMatch="ACCEPT" onMismatch="NEUTRAL"/>
-        <Filter type="MarkerFilter" marker="EXCEPTION" onMatch="ACCEPT" onMismatch="DENY"/>
-      </Filters>
-    </Appender>-->
-    <Appender type="File" name="File" fileName="${filename}">
-      <Layout type="PatternLayout">
-        <Pattern>%d{yyyy:HH:mm:ss.SSS} [%t] %-5level %logger{36} L-%L %msg%n</Pattern>
-      </Layout>
-    </Appender>
-    <!--<Appender type="List" name="List">
-    </Appender>-->
-  </Appenders>
- 
-  <Loggers>
-    <Logger name="CircleTests" level="debug"> <!-- additivity="false">-->
-      <!--<Filter type="ThreadContextMapFilter">
-        <KeyValuePair key="test" value="123"/>
-      </Filter>-->
-      <AppenderRef ref="console"/>
-    </Logger>
- 
-    <Logger name="CircleTests" level="debug"> <!-- additivity="false">-->
-      <AppenderRef ref="File"/>
-    </Logger>
- 
-    <Root level="trace">
-      <AppenderRef ref="console"/>
-    </Root>
-  </Loggers>
- 
+	<Properties>
+		<Property name="filename-program1">logs/tme1-circles.log</Property>
+		<Property name="filename-program2">logs/tme1-mailing.log</Property>
+		<Property name="filename-program3">logs/tme1-riding.log</Property>
+		<Property name="filename-program4">logs/tme1-instruments.log</Property>
+		<Property name="console-pattern">%d{HH:mm:ss.SSS} %-5level [%t]%c.%M %L:%msg%n</Property>
+		<Property name="file-pattern">%d{yyyy:HH:mm:ss.SSS} %-5level [%t]%c.%M %L:%msg%n</Property>
+	</Properties>
+	<Appenders>
+		<Appender type="Console" name="console">
+			<Layout type="PatternLayout" pattern="${console-pattern}" />
+		</Appender>
+		<Appender type="File" name="file-program1" fileName="${filename-program1}">
+			<Layout type="PatternLayout" pattern="${file-pattern}"/>
+		</Appender>
+		<Appender type="File" name="file-program2" fileName="${filename-program2}">
+			<Layout type="PatternLayout" pattern="${file-pattern}"/>
+		</Appender>
+		<Appender type="File" name="file-program3" fileName="${filename-program3}">
+			<Layout type="PatternLayout" pattern="${file-pattern}"/>
+		</Appender>
+		<Appender type="File" name="file-program4" fileName="${filename-program4}">
+			<Layout type="PatternLayout" pattern="${file-pattern}"/>
+		</Appender>
+	</Appenders>
+	<Loggers>
+		<Logger name="com.jfbuilds.tme1.program1.CircleTests" level="debug">
+			<AppenderRef ref="file-program1" />
+		</Logger>
+		<Logger name="com.jfbuilds.tme1.program1.MailingTests" level="debug">
+			<AppenderRef ref="file-program2" />
+		</Logger>
+		<Logger name="com.jfbuilds.tme1.program1.RidingTests" level="debug">
+			<AppenderRef ref="file-program3" />
+		</Logger>
+		<Logger name="com.jfbuilds.tme1.program1.InstrumentsTests" level="debug">
+			<AppenderRef ref="file-program4" />
+		</Logger>
+		<Root level="warn">
+			<AppenderRef ref="console" />
+		</Root>
+	</Loggers>
 </Configuration>
-
-
-
-
-
-<!-- <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="WARN" monitorInterval="30" name="defaultConfig">
-  <Appenders>
-    <Console name="Console" target="SYSTEM_OUT">
-      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} L-%L %msg%n"/>
-    </Console>
-  </Appenders>
-  <Loggers>
-    <Logger name="CircleTests" level="trace">
-      <AppenderRef ref="Console"/>
-    </Logger>
-    <Root level="trace">
-      <AppenderRef ref="Console"/>
-    </Root>
-  </Loggers>
-</Configuration>-->
