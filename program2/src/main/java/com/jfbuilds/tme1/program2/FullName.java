@@ -1,12 +1,6 @@
 /**
- *   File Name: FullName.java
- *
- *   Jean-francois Nepton
- *   COMP 308 Java for Programmers
- *   Cordinator: Dr. Xiaokun Zhang
- *   Student ID# 2358976
- *   Created: Sep 19, 2014
- *   
+ * File Name: FullName.java Jean-francois Nepton COMP 308 Java for Programmers
+ * Cordinator: Dr. Xiaokun Zhang Student ID# 2358976 Created: Sep 19, 2014
  */
 package com.jfbuilds.tme1.program2;
 
@@ -17,18 +11,20 @@ package com.jfbuilds.tme1.program2;
  * <p>
  * (description of core methods)
  * 
- * @author      Jean-francois Nepton
- * @version     %I%, %G%
- * @since       1.0
- *
+ * @author Jean-francois Nepton
+ * @version %I%, %G%
+ * @since 1.0
  */
 public class FullName {
-	
+
 	private String title;
+
 	private String firstName;
+
 	private String middleName;
+
 	private String lastName;
-	
+
 	/*
 	 * Default Constructor which creates John Doe
 	 */
@@ -38,7 +34,7 @@ public class FullName {
 		middleName = "Middle";
 		lastName = "Doe";
 	}
-	
+
 	/*
 	 * Parameterized Constructor which takes a supplied name
 	 */
@@ -48,7 +44,7 @@ public class FullName {
 		this.middleName = middleName;
 		this.lastName = lastName;
 	}
-	
+
 	/*
 	 * Overriden implementation of the String value of a FullName object
 	 */
@@ -56,5 +52,4 @@ public class FullName {
 	public String toString() {
 		return (title + " " + firstName + " " + middleName + " " + lastName);
 	}
-
 }

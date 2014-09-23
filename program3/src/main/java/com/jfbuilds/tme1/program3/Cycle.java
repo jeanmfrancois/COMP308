@@ -1,12 +1,6 @@
 /**
- *   File Name: Cycle.java
- *
- *   Jean-francois Nepton
- *   COMP 308 Java for Programmers
- *   Cordinator: Dr. Xiaokun Zhang
- *   Student ID# 2358976
- *   Created: Sep 19, 2014
- *   
+ * File Name: Cycle.java Jean-francois Nepton COMP 308 Java for Programmers
+ * Cordinator: Dr. Xiaokun Zhang Student ID# 2358976 Created: Sep 19, 2014
  */
 package com.jfbuilds.tme1.program3;
 
@@ -17,10 +11,9 @@ package com.jfbuilds.tme1.program3;
  * <p>
  * (description of core methods)
  * 
- * @author      Jean-francois Nepton
- * @version     %I%, %G%
- * @since       1.0
- *
+ * @author Jean-francois Nepton
+ * @version %I%, %G%
+ * @since 1.0
  */
 public class Cycle {
 
@@ -38,28 +31,30 @@ public class Cycle {
 		ride(bike2);
 		ride(bike3);
 	}
-	
+
 	/**
-	 * @param cycle An object that will be upcasted to Cycle
+	 * @param cycle
+	 *            An object that will be upcasted to Cycle
 	 */
 	public static void ride(Cycle cycle) {
 		System.out.println("Current cycle has " + cycle.wheels() + " wheels");
 	}
-	
+
 	/**
-	 * @param cycle An object that will be upcasted to Cycle
+	 * @param cycle
+	 *            An object that will be upcasted to Cycle
 	 */
 	public int wheels() {
 		System.out.println("Can not ride with no wheels");
 		return 0;
 	}
-
 }
 
 class Unicycle extends Cycle {
 
 	/**
-	 * @param cycle An object that will be upcasted to Cycle
+	 * @param cycle
+	 *            An object that will be upcasted to Cycle
 	 */
 	public int wheels() {
 		System.out.println("Riding a Unicycle");
@@ -68,6 +63,7 @@ class Unicycle extends Cycle {
 }
 
 class Bicycle extends Cycle {
+
 	public int wheels() {
 		System.out.println("Riding a Bicycle");
 		return 2;
@@ -75,6 +71,7 @@ class Bicycle extends Cycle {
 }
 
 class Tricycle extends Cycle {
+
 	public int wheels() {
 		System.out.println("Riding a Tricycle");
 		return 3;

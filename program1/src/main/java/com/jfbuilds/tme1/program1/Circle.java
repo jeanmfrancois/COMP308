@@ -1,12 +1,6 @@
 /**
- *   File Name: Circle.java
- *
- *   Jean-francois Nepton
- *   COMP 308 Java for Programmers
- *   Cordinator: Dr. Xiaokun Zhang
- *   Student ID# 2358976
- *   Created: Sep 16, 2014
- *   
+ * File Name: Circle.java Jean-francois Nepton COMP 308 Java for Programmers
+ * Cordinator: Dr. Xiaokun Zhang Student ID# 2358976 Created: Sep 16, 2014
  */
 package com.jfbuilds.tme1.program1;
 
@@ -27,7 +21,6 @@ import org.apache.logging.log4j.Logger;
  * @author Jean-francois Nepton
  * @version %I%, %G%
  * @since 1.0
- *
  */
 public class Circle implements CircleInterface {
 
@@ -35,7 +28,7 @@ public class Circle implements CircleInterface {
 	 * Logger for attribute information
 	 */
 	static final Logger log = LogManager.getLogger(Circle.class);
-	
+
 	/**
 	 * Maximum radius allowed
 	 */
@@ -100,10 +93,9 @@ public class Circle implements CircleInterface {
 	 * @see com.jfbuilds.tme1.program1.CircleInterface#printAttributes()
 	 */
 	public void printAttributes() {
-		String message = "Coordinates:(" + this.x + ", " + this.y + ")\n" 
-						+ "Radius:" + this.r + "\n"
-						+ "Circumference:" + circumference() + "\n" 
-						+ "Area:" + area();
+		String message =
+				"Coordinates:(" + this.x + ", " + this.y + ")\n" + "Radius:" + this.r + "\n" + "Circumference:"
+						+ circumference() + "\n" + "Area:" + area();
 		log.info(message);
 	}
 

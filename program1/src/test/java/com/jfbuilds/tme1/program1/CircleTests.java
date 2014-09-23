@@ -1,12 +1,7 @@
 /**
- *   File Name: CircleTests.java
- *
- *   Jean-francois Nepton
- *   COMP 308 Java for Programmers
- *   Cordinator: Dr. Xiaokun Zhang
- *   Student ID# 2358976
- *   Created: Sep 19, 2014
- *   
+ * File Name: CircleTests.java Jean-francois Nepton COMP 308 Java for
+ * Programmers Cordinator: Dr. Xiaokun Zhang Student ID# 2358976 Created: Sep
+ * 19, 2014
  */
 package com.jfbuilds.tme1.program1;
 

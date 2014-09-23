@@ -1,12 +1,7 @@
 /**
- *   File Name: MailingAddress.java
- *
- *   Jean-francois Nepton
- *   COMP 308 Java for Programmers
- *   Cordinator: Dr. Xiaokun Zhang
- *   Student ID# 2358976
- *   Created: Sep 19, 2014
- *   
+ * File Name: MailingAddress.java Jean-francois Nepton COMP 308 Java for
+ * Programmers Cordinator: Dr. Xiaokun Zhang Student ID# 2358976 Created: Sep
+ * 19, 2014
  */
 package com.jfbuilds.tme1.program2;
 
@@ -17,20 +12,24 @@ package com.jfbuilds.tme1.program2;
  * <p>
  * (description of core methods)
  * 
- * @author      Jean-francois Nepton
- * @version     %I%, %G%
- * @since       1.0
- *
+ * @author Jean-francois Nepton
+ * @version %I%, %G%
+ * @since 1.0
  */
 public class MailingAddress {
 
 	private FullName contact;
+
 	private String addressLine1;
+
 	private String addressLine2;
+
 	private String city;
+
 	private String province;
+
 	private String postalCode;
-	
+
 	/*
 	 * Default Constructor which creates John Doe in the Parliment
 	 */
@@ -42,10 +41,9 @@ public class MailingAddress {
 		province = "Ontario";
 		postalCode = "K1A 0A9";
 	}
-	
+
 	/*
 	 * Parameterized Constructor which takes a supplied name
-	 * 
 	 * @param contact
 	 * @param addressLine1
 	 * @param addressLine2
@@ -74,6 +72,6 @@ public class MailingAddress {
 		} else {
 			address = addressLine1 + "\n" + addressLine2;
 		}
-		return contact.toString() + "\n" + address + "\n" + city + ", " + province + " " + postalCode + "\n"; 
+		return contact.toString() + "\n" + address + "\n" + city + ", " + province + " " + postalCode + "\n";
 	}
 }

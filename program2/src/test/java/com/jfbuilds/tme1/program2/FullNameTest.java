@@ -1,12 +1,7 @@
 /**
- *   File Name: FullNameTest.java
- *
- *   Jean-francois Nepton
- *   COMP 308 Java for Programmers
- *   Cordinator: Dr. Xiaokun Zhang
- *   Student ID# 2358976
- *   Created: Sep 23, 2014
- *   
+ * File Name: FullNameTest.java Jean-francois Nepton COMP 308 Java for
+ * Programmers Cordinator: Dr. Xiaokun Zhang Student ID# 2358976 Created: Sep
+ * 23, 2014
  */
 package com.jfbuilds.tme1.program2;
 
@@ -22,10 +17,9 @@ import org.junit.Test;
  * <p>
  * (description of core methods)
  * 
- * @author      Jean-francois Nepton
- * @version     %I%, %G%
- * @since       1.0
- *
+ * @author Jean-francois Nepton
+ * @version %I%, %G%
+ * @since 1.0
  */
 public class FullNameTest {
 
@@ -39,7 +33,9 @@ public class FullNameTest {
 	}
 
 	/**
-	 * Test method for {@link com.jfbuilds.tme1.program2.FullName#FullName(java.lang.String, java.lang.String, java.lang.String, java.lang.String)}.
+	 * Test method for
+	 * {@link com.jfbuilds.tme1.program2.FullName#FullName(java.lang.String, java.lang.String, java.lang.String, java.lang.String)}
+	 * .
 	 */
 	@Test
 	public void testFullNameStringStringStringString() {
@@ -55,5 +51,4 @@ public class FullNameTest {
 		log.info("testing the toString Method");
 		// TODO
 	}
-
 }
