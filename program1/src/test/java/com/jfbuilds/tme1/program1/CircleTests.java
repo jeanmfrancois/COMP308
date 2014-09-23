@@ -33,8 +33,4 @@ import org.junit.runners.Suite.SuiteClasses;
 @SuiteClasses({ CircleInitTest.class, CircumferenceTest.class})
 public class CircleTests {
 	public static final Logger log = LogManager.getLogger(CircleTests.class.getName());
-		
-	static {
-		log.info("testing static init");
-	}
 }

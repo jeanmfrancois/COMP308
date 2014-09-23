@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="warn" strict="true" name="DefaultXMLConfig">
 	<Properties>
+		<Property name="filename-root">../logs/tme1-logging.log</Property>
 		<Property name="filename-program1">../logs/tme1-circles.log</Property>
 		<Property name="filename-program2">../logs/tme1-mailing.log</Property>
 		<Property name="filename-program3">../logs/tme1-riding.log</Property>
@@ -11,6 +12,9 @@
 	<Appenders>
 		<Appender type="Console" name="console">
 			<Layout type="PatternLayout" pattern="${console-pattern}" />
+		</Appender>
+		<Appender type="File" name="file-root" fileName="${filename-root}">
+			<Layout type="PatternLayout" pattern="${file-pattern}"/>
 		</Appender>
 		<Appender type="File" name="file-program1" fileName="${filename-program1}">
 			<Layout type="PatternLayout" pattern="${file-pattern}"/>
@@ -38,7 +42,8 @@
 		<Logger name="com.jfbuilds.tme1.program4.InstrumentsTests" level="debug">
 			<AppenderRef ref="file-program4" />
 		</Logger>
-		<Root level="warn">
+		<Root level="trace">
+		    <AppenderRef ref="file-root" />
 			<AppenderRef ref="console" />
 		</Root>
 	</Loggers>

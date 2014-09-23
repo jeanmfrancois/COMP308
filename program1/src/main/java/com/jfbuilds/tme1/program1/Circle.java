@@ -10,6 +10,9 @@
  */
 package com.jfbuilds.tme1.program1;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 /**
  * Circle represents a simple shape of Euclidean geometry that is the 
  * set of all points in a plane that are at a given distance 
@@ -28,6 +31,8 @@ package com.jfbuilds.tme1.program1;
  *
  */
 public class Circle implements CircleInterface {
+	
+	static final Logger log = LogManager.getLogger(Circle.class);
 	
 	/**
 	 * Maximum radius allowed
@@ -54,7 +59,7 @@ public class Circle implements CircleInterface {
 	 * Default Constructor
 	 */
 	public Circle() {
-		//CircleTests.log.info("Created a Circle");
+		log.info("Created a Circle");
 		move(10,10);
 		setRadius(5);
 	}
@@ -95,10 +100,10 @@ public class Circle implements CircleInterface {
 	 * @see com.jfbuilds.tme1.program1.CircleInterface#printAttributes()
 	 */
 	public void printAttributes() {
-		System.out.println("Coordinates:(" + this.x + ", " + this.y + ")");
-		System.out.println("Radius:" + this.r);
-		System.out.println("Circumference:" + circumference());
-		System.out.println("Area:" + area());
+		log.debug("Coordinates:(" + this.x + ", " + this.y + ")");
+		log.debug("Radius:" + this.r);
+		log.debug("Circumference:" + circumference());
+		log.debug("Area:" + area());
 	}
 
 	/* (non-Javadoc)
