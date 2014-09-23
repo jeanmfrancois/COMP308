@@ -31,7 +31,8 @@ public class CircumferenceTest {
 	 */
 	@Test
 	public void testCircumference() {
-		System.out.println("Not yet implemented");
+		CircleTests.log.debug("Not yet implemented but lets debug!");
+		CircleTests.log.warn("WARNING! GEt away!");
 		assert(true);
 	}
 

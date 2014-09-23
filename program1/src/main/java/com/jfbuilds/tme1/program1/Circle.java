@@ -54,6 +54,7 @@ public class Circle implements CircleInterface {
 	 * Default Constructor
 	 */
 	public Circle() {
+		//CircleTests.log.info("Created a Circle");
 		move(10,10);
 		setRadius(5);
 	}
@@ -125,6 +126,4 @@ public class Circle implements CircleInterface {
 		this.x = x;
 		this.y = y;
 	}
-	
-
 }

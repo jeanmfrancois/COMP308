@@ -1,5 +1,5 @@
 /**
- *   File Name: CircleInitializationTest.java
+ *   File Name: CircleInitTest.java
  *
  *   Jean-francois Nepton
  *   COMP 308 Java for Programmers
@@ -10,12 +10,12 @@
  */
 package com.jfbuilds.tme1.program1;
 
+import com.jfbuilds.tme1.program1.Circle;
 import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 /**
- * CircleInitializationTest (description of class)
+ * CircleInitTest (description of class)
  * <p>
  * (description of core fields)
  * <p>
@@ -26,13 +26,14 @@ import org.junit.Test;
  * @since       1.0
  *
  */
-public class CircleInitializationTest {
+public class CircleInitTest {
 	
 	/**
 	 * Test method for {@link com.jfbuilds.tme1.program1.Circle#Circle()}.
 	 */
 	@Test
 	public void testCircle() {
+		System.out.println();
 		CircleTests.log.info("Testing the creation of a default Circle Initialization:");
     	Circle circle1 = new Circle();
     	circle1.printAttributes();
@@ -44,7 +45,7 @@ public class CircleInitializationTest {
 	 */
 	@Test
 	public void testCircleDoubleDoubleDouble() {
-    	CircleTests.log.info("Testing the creation of a Unique Circle Initialization:");
+    	CircleTests.log.warn("Testing the creation of a Unique Circle Initialization:");
     	Circle circle2 = new Circle(10,10,5);
     	circle2.printAttributes();
     	assertTrue( true );
