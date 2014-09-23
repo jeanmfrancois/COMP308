@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="warn" strict="true" name="DefaultXMLConfig">
 	<Properties>
-		<Property name="filename-program1">logs/tme1-circles.log</Property>
-		<Property name="filename-program2">logs/tme1-mailing.log</Property>
-		<Property name="filename-program3">logs/tme1-riding.log</Property>
-		<Property name="filename-program4">logs/tme1-instruments.log</Property>
+		<Property name="filename-program1">../logs/tme1-circles.log</Property>
+		<Property name="filename-program2">../logs/tme1-mailing.log</Property>
+		<Property name="filename-program3">../logs/tme1-riding.log</Property>
+		<Property name="filename-program4">../logs/tme1-instruments.log</Property>
 		<Property name="console-pattern">%d{HH:mm:ss.SSS} %-5level [%t]%c.%M %L:%msg%n</Property>
 		<Property name="file-pattern">%d{yyyy:HH:mm:ss.SSS} %-5level [%t]%c.%M %L:%msg%n</Property>
 	</Properties>
@@ -29,13 +29,13 @@
 		<Logger name="com.jfbuilds.tme1.program1.CircleTests" level="debug">
 			<AppenderRef ref="file-program1" />
 		</Logger>
-		<Logger name="com.jfbuilds.tme1.program1.MailingTests" level="debug">
+		<Logger name="com.jfbuilds.tme1.program2.MailingTests" level="debug">
 			<AppenderRef ref="file-program2" />
 		</Logger>
-		<Logger name="com.jfbuilds.tme1.program1.RidingTests" level="debug">
+		<Logger name="com.jfbuilds.tme1.program3.RidingTests" level="debug">
 			<AppenderRef ref="file-program3" />
 		</Logger>
-		<Logger name="com.jfbuilds.tme1.program1.InstrumentsTests" level="debug">
+		<Logger name="com.jfbuilds.tme1.program4.InstrumentsTests" level="debug">
 			<AppenderRef ref="file-program4" />
 		</Logger>
 		<Root level="warn">
