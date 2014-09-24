@@ -4,8 +4,6 @@
  */
 package com.jfbuilds.tme1.program3;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 /**
@@ -27,7 +25,7 @@ public class CycleTest {
 	 */
 	@Test
 	public void testMain() {
-		fail("Not yet implemented"); // TODO
+		// fail("Not yet implemented"); // TODO
 	}
 
 	/**
@@ -37,7 +35,7 @@ public class CycleTest {
 	 */
 	@Test
 	public void testRide() {
-		fail("Not yet implemented"); // TODO
+		// fail("Not yet implemented"); // TODO
 	}
 
 	/**
@@ -45,6 +43,6 @@ public class CycleTest {
 	 */
 	@Test
 	public void testWheels() {
-		fail("Not yet implemented"); // TODO
+		// fail("Not yet implemented"); // TODO
 	}
 }

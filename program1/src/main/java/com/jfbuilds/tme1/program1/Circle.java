@@ -37,24 +37,24 @@ public class Circle implements CircleInterface {
 	/**
 	 * Horizontal coordinate
 	 */
-	private double x = 0;
+	double x = 0;
 
 	/**
 	 * Vertical coordinate
 	 */
-	private double y = 0;
+	double y = 0;
 
 	/**
 	 * Radius of circle
 	 */
-	private double r;
+	double r;
 
 	/**
 	 * Default Constructor
 	 */
 	public Circle() {
-		move(10, 10);
-		setRadius(5);
+		move(10, -10);
+		setRadius(8);
 	}
 
 	/**
@@ -68,6 +68,7 @@ public class Circle implements CircleInterface {
 	/**
 	 * @see com.jfbuilds.tme1.program1.CircleInterface#circumference()
 	 */
+	@Override
 	public double circumference() {
 		double diameter = 2 * r;
 		double circumference = Math.PI * diameter;
@@ -77,14 +78,16 @@ public class Circle implements CircleInterface {
 	/**
 	 * @see com.jfbuilds.tme1.program1.CircleInterface#area()
 	 */
+	@Override
 	public double area() {
-		double area = (Math.PI * Math.sqrt(r));
+		double area = (Math.PI * (r * r));
 		return area;
 	}
 
 	/**
 	 * @see com.jfbuilds.tme1.program1.CircleInterface#setRadius(double)
 	 */
+	@Override
 	public void setRadius(double r) {
 		this.r = r < MAX_RADIUS ? r : MAX_RADIUS;
 	}
@@ -92,18 +95,17 @@ public class Circle implements CircleInterface {
 	/**
 	 * @see com.jfbuilds.tme1.program1.CircleInterface#printAttributes()
 	 */
+	@Override
 	public void printAttributes() {
-		String message =
-				"Coordinates:(" + this.x + ", " + this.y + ")\n" + "Radius:" + this.r + "\n" + "Circumference:"
-						+ circumference() + "\n" + "Area:" + area();
-		log.info(message);
+		log.info(getAttributes());
 	}
 
 	/**
 	 * @see com.jfbuilds.tme1.program1.CircleInterface#isInside(double, double)
 	 */
+	@Override
 	public boolean isInside(double x, double y) {
-		if ((Math.sqrt(x - this.x) + Math.sqrt(y - this.y)) < Math.sqrt(r))
+		if ((((x - this.x) * (x - this.x)) + ((y - this.y) * (y - this.y))) < r * r)
 			return true;
 		else
 			return false;
@@ -112,6 +114,7 @@ public class Circle implements CircleInterface {
 	/**
 	 * @see com.jfbuilds.tme1.program1.CircleInterface#move(int, int)
 	 */
+	@Override
 	public void move(int x, int y) {
 		this.x += x;
 		this.y += y;
@@ -120,8 +123,32 @@ public class Circle implements CircleInterface {
 	/**
 	 * @see com.jfbuilds.tme1.program1.CircleInterface#move(double, double)
 	 */
+	@Override
 	public void move(double x, double y) {
 		this.x += x;
 		this.y += y;
+	}
+
+	/**
+	 * @see com.jfbuilds.tme1.program1.CircleInterface#getAttributes()
+	 */
+	@Override
+	public String getAttributes() {
+		String message =
+				"Coordinates:(" + this.x + ", " + this.y + ")\n" + "Radius:" + Math.round(this.r) + "\n"
+						+ "Circumference:" + ((double) Math.round(circumference() * 100) / 100) + "\n" + "Area:"
+						+ ((double) Math.round(area() * 100) / 100);
+		return message;
+	}
+
+	/**
+	 * Main method to offer generic execution
+	 * 
+	 * @param args
+	 *            No parameters are currently supported.
+	 */
+	public static void main(String[] args) {
+		System.out.println("Hello Circle!\n" + new Circle().getAttributes());
+		new Circle(56d, 398d, 42d).printAttributes();
 	}
 }

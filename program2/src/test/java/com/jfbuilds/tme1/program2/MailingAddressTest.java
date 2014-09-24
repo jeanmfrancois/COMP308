@@ -5,9 +5,10 @@
  */
 package com.jfbuilds.tme1.program2;
 
-import static com.jfbuilds.tme1.program2.MailingTests.log;
-import static org.junit.Assert.*;
+import static org.junit.Assert.fail;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 
 /**
@@ -29,7 +30,13 @@ public class MailingAddressTest {
 	 */
 	@Test
 	public void testMailingAddress() {
-		log.info("testing XXX");
+		Logger log = LogManager.getLogger("com.jfbuilds.tme1.program2");
+		log.info("Performing Test:" + "testMailingAddress - ");
+		if (true) {
+			assert (true);
+		} else {
+			fail("failMessage");
+		}
 		// TODO
 	}
 
@@ -40,7 +47,13 @@ public class MailingAddressTest {
 	 */
 	@Test
 	public void testMailingAddressFullNameStringStringStringStringString() {
-		log.info("testing XXX");
+		Logger log = LogManager.getLogger("com.jfbuilds.tme1.program2");
+		log.info("Performing Test:" + "testMailingAddressFullNameStringStringStringStringString - ");
+		if (true) {
+			assert (true);
+		} else {
+			fail("failMessage");
+		}
 		// TODO
 	}
 
@@ -50,7 +63,12 @@ public class MailingAddressTest {
 	 */
 	@Test
 	public void testToString() {
-		log.info("testing XXX");
-		// TODO
+		Logger log = LogManager.getLogger("com.jfbuilds.tme1.program2");
+		log.info("Performing Test:" + "testToString - ");
+		if (true) {
+			assert (true);
+		} else {
+			fail("failMessage");
+		}
 	}
 }

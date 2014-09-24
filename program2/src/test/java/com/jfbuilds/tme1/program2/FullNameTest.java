@@ -5,9 +5,10 @@
  */
 package com.jfbuilds.tme1.program2;
 
-import static org.junit.Assert.*;
-import static com.jfbuilds.tme1.program2.MailingTests.log;
+import static org.junit.Assert.fail;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 
 /**
@@ -28,8 +29,13 @@ public class FullNameTest {
 	 */
 	@Test
 	public void testFullName() {
-		log.info("testing the Init of Full Name");
-		// TODO
+		Logger log = LogManager.getLogger("com.jfbuilds.tme1.program2");
+		log.info("Performing Test:" + "testFullName - ");
+		if (true) {
+			assert (true);
+		} else {
+			fail("failMessage");
+		}
 	}
 
 	/**
@@ -39,8 +45,13 @@ public class FullNameTest {
 	 */
 	@Test
 	public void testFullNameStringStringStringString() {
-		log.info("testing the Init of Full Name String String");
-		// TODO
+		Logger log = LogManager.getLogger("com.jfbuilds.tme1.program2");
+		log.info("Performing Test:" + "testFullNameStringStringStringString - okie");
+		if (true) {
+			assert (true);
+		} else {
+			fail("failMessage");
+		}
 	}
 
 	/**
@@ -48,7 +59,12 @@ public class FullNameTest {
 	 */
 	@Test
 	public void testToString() {
-		log.info("testing the toString Method");
-		// TODO
+		Logger log = LogManager.getLogger("com.jfbuilds.tme1.program2");
+		log.info("Performing Test:" + "testToString - I doubt this is bad");
+		if (true) {
+			assert (true);
+		} else {
+			fail("did we fail again");
+		}
 	}
 }

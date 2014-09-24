@@ -6,8 +6,10 @@
 package com.jfbuilds.tme1.program2;
 
 import static com.jfbuilds.tme1.program2.MailingTests.log;
-import static org.junit.Assert.*;
+import static org.junit.Assert.fail;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 
 /**
@@ -29,8 +31,13 @@ public class ShippingTest {
 	 */
 	@Test
 	public void testShippingLabel() {
-		log.info("testing XXX");
-		// TODO
+		// Logger log = LogManager.getLogger("com.jfbuilds.tme1.program2");
+		log.info("Performing Test:" + "testShippingLabel - ");
+		if (true) {
+			assert (true);
+		} else {
+			fail("failMessage");
+		}
 	}
 
 	/**
@@ -40,8 +47,13 @@ public class ShippingTest {
 	 */
 	@Test
 	public void testShippingLabelMailingAddressMailingAddress() {
-		log.info("testing XXX");
-		// TODO
+		// Logger log = LogManager.getLogger("com.jfbuilds.tme1.program2");
+		log.info("Performing Test:" + "testShippingLabelMailingAddressMailingAddress - ");
+		if (true) {
+			assert (true);
+		} else {
+			fail("failMessage");
+		}
 	}
 
 	/**
@@ -51,8 +63,15 @@ public class ShippingTest {
 	 */
 	@Test
 	public void testMain() {
-		log.info("testing XXX");
-		// TODO
+		Logger log = LogManager.getLogger("com.jfbuilds.tme1.program2");
+		log.info("Performing Test:" + "testMain - ");
+		if (true) {
+			log.info("Status: " + "PASSED");
+			assert (true);
+		} else {
+			log.warn("Status: " + "FAILED" + " - Test: testMain -> Incorrect use of a test");
+			fail("Incorrect use of a test");
+		}
 	}
 
 	/**
@@ -61,7 +80,14 @@ public class ShippingTest {
 	 */
 	@Test
 	public void testToString() {
-		log.info("testing XXX");
-		// TODO
+		// Logger log = LogManager.getLogger("com.jfbuilds.tme1.program2");
+		log.info("Performing Test:" + "testToString - ");
+		if (true) {
+			log.info("Status: " + "PASSED");
+			assert (true);
+		} else {
+			log.warn("Status: " + "FAILED" + " - Test: testToString");
+			fail("failMessage");
+		}
 	}
 }

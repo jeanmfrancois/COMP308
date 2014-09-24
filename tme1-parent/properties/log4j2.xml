@@ -6,8 +6,8 @@
 		<Property name="filename-program2">../logs/tme1-mailing.log</Property>
 		<Property name="filename-program3">../logs/tme1-riding.log</Property>
 		<Property name="filename-program4">../logs/tme1-instruments.log</Property>
-		<Property name="console-pattern">%d{HH:mm:ss.SSS} %-5level [%t]%c.%M %L:%msg%n</Property>
-		<Property name="file-pattern">%d{yyyy:HH:mm:ss.SSS} %-5level [%t]%c.%M %L:%msg%n</Property>
+		<Property name="console-pattern">%d{HH:mm:ss.SSS} %-5level [%t]%M [%L]:%msg%n</Property>
+		<Property name="file-pattern">%d{yyyy:HH:mm:ss.SSS} %-5level [%t]%M [%L]:%msg%n</Property>
 	</Properties>
 	<Appenders>
 		<Appender type="Console" name="console">

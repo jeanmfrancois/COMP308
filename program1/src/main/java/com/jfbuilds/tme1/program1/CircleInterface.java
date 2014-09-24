@@ -46,6 +46,12 @@ public interface CircleInterface {
 	public void printAttributes();
 
 	/**
+	 * Returns a String with the coordinates, the radius, the circumference, and
+	 * the area of a Circle object
+	 */
+	public String getAttributes();
+
+	/**
 	 * Checks if a point represented in the parameters falls inside the circle
 	 * 
 	 * @param x

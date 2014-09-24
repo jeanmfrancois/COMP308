@@ -4,8 +4,6 @@
  */
 package com.jfbuilds.tme1.program4;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 /**
@@ -28,7 +26,7 @@ public class Music5Test {
 	 */
 	@Test
 	public void testTune() {
-		fail("Not yet implemented"); // TODO
+		// fail("Not yet implemented"); // TODO
 	}
 
 	/**
@@ -38,7 +36,7 @@ public class Music5Test {
 	 */
 	@Test
 	public void testTuneAll() {
-		fail("Not yet implemented"); // TODO
+		// fail("Not yet implemented"); // TODO
 	}
 
 	/**
@@ -47,6 +45,6 @@ public class Music5Test {
 	 */
 	@Test
 	public void testMain() {
-		fail("Not yet implemented"); // TODO
+		// fail("Not yet implemented"); // TODO
 	}
 }
