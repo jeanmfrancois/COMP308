@@ -30,7 +30,7 @@ public class CycleTest {
 	@Test
 	public void testMain() {
 		Cycle.main(new String[] {});
-		log.info("Performing Test:" + "testMain - Testing for the correct execution of the main method");
+		log.debug("Performing Test:" + "testMain - Testing for the correct execution of the main method");
 		if (true) {
 			log.info("Status: " + "PASSED - successfully executed main method/ polymorphism of wheel method");
 			assertTrue(true);
@@ -55,7 +55,7 @@ public class CycleTest {
 		log.info("Performing Test:"
 				+ "testRide - Testing for the correct execution of ride method depending on instance: Cycle subclass");
 		if (true) {
-			log.info("Status: " + "PASSED - with value of cycle wheels: " + cycle.wheels());
+			log.debug("Status: " + "PASSED - with value of cycle wheels: " + cycle.wheels());
 			assertTrue(true);
 		} else {
 			log.warn("Status: "
@@ -69,7 +69,7 @@ public class CycleTest {
 		log.info("Performing Test:"
 				+ "testRide - Testing for the correct execution of ride method depending on instance: Unicycle");
 		if (true) {
-			log.info("Status: " + "PASSED - with value of cycle wheels: " + cycle.wheels());
+			log.debug("Status: " + "PASSED - with value of cycle wheels: " + cycle.wheels());
 			assertTrue(true);
 		} else {
 			log.warn("Status: "
@@ -83,7 +83,7 @@ public class CycleTest {
 		log.info("Performing Test:"
 				+ "testRide - Testing for the correct execution of ride method depending on instance: Bicycle");
 		if (true) {
-			log.info("Status: " + "PASSED - with value of cycle wheels: " + cycle.wheels());
+			log.debug("Status: " + "PASSED - with value of cycle wheels: " + cycle.wheels());
 			assertTrue(true);
 		} else {
 			log.warn("Status: "
@@ -97,7 +97,7 @@ public class CycleTest {
 		log.info("Performing Test:"
 				+ "testRide - Testing for the correct execution of ride method depending on instance: Tricycle");
 		if (true) {
-			log.info("Status: " + "PASSED - with value of cycle wheels: " + cycle.wheels());
+			log.debug("Status: " + "PASSED - with value of cycle wheels: " + cycle.wheels());
 			assertTrue(true);
 		} else {
 			log.warn("Status: "
@@ -117,7 +117,7 @@ public class CycleTest {
 		log.info("Performing Test:" + "testWheels - Testing for correct execution of wheels for basic Cycle class = "
 				+ cycle.wheels());
 		if (cycle.wheels() == 0) {
-			log.info("Status: " + "PASSED - with value of wheels = " + cycle.wheels());
+			log.debug("Status: " + "PASSED - with value of wheels = " + cycle.wheels());
 			assertTrue(true);
 		} else {
 			log.warn("Status: " + "FAILED"
@@ -128,7 +128,7 @@ public class CycleTest {
 		log.info("Performing Test:"
 				+ "testWheels - Testing for correct execution of wheels for basic Unicycle class = " + cycle.wheels());
 		if (cycle.wheels() == 1) {
-			log.info("Status: " + "PASSED - with value of wheels = " + cycle.wheels());
+			log.debug("Status: " + "PASSED - with value of wheels = " + cycle.wheels());
 			assertTrue(true);
 		} else {
 			log.warn("Status: " + "FAILED"
@@ -139,7 +139,7 @@ public class CycleTest {
 		log.info("Performing Test:" + "testWheels - Testing for correct execution of wheels for basic Bicycle class = "
 				+ cycle.wheels());
 		if (cycle.wheels() == 2) {
-			log.info("Status: " + "PASSED - with value of wheels = " + cycle.wheels());
+			log.debug("Status: " + "PASSED - with value of wheels = " + cycle.wheels());
 			assertTrue(true);
 		} else {
 			log.warn("Status: " + "FAILED"
@@ -150,7 +150,7 @@ public class CycleTest {
 		log.info("Performing Test:"
 				+ "testWheels - Testing for correct execution of wheels for basic Tricycle class = " + cycle.wheels());
 		if (cycle.wheels() == 3) {
-			log.info("Status: " + "PASSED - with value of wheels = " + cycle.wheels());
+			log.debug("Status: " + "PASSED - with value of wheels = " + cycle.wheels());
 			assertTrue(true);
 		} else {
 			log.warn("Status: " + "FAILED"

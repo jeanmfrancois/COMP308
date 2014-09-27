@@ -34,7 +34,7 @@ public class MailingAddressTest {
 		log.info("Performing Test:"
 				+ "testMailingAddress - Testing for the successful creation of a default mailing address with an Ottawa address");
 		if (mailingaddress != null) {
-			log.info("Status: " + "PASSED - with value:\n" + mailingaddress);
+			log.debug("Status: " + "PASSED - with value:\n" + mailingaddress);
 			assertTrue(true);
 		} else {
 			log.warn("Status: " + "FAILED"
@@ -56,7 +56,7 @@ public class MailingAddressTest {
 		log.info("Performing Test:"
 				+ "testMailingAddressFullNameStringStringStringStringString - Testing for the successful creation of a MailingAddress: Mrs. Olive L. Smith, 1 University Dr., Suite 666, Athabasca, Alberta T9S 3A3");
 		if (mailingaddress != null) {
-			log.info("Status: " + "PASSED - with value:\n" + mailingaddress);
+			log.debug("Status: " + "PASSED - with value:\n" + mailingaddress);
 			assertTrue(true);
 		} else {
 			log.warn("Status: "
@@ -75,7 +75,7 @@ public class MailingAddressTest {
 		MailingAddress mailingaddress = new MailingAddress();
 		log.info("Performing Test:" + "testToString - Testing for the overriding of the default toString method");
 		if (true) {
-			log.info("Status: " + "PASSED - with value:\n" + mailingaddress);
+			log.debug("Status: " + "PASSED - with value:\n" + mailingaddress);
 			assertTrue(true);
 		} else {
 			log.warn("Status: " + "FAILED"

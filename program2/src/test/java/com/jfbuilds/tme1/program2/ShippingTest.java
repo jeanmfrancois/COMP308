@@ -34,7 +34,7 @@ public class ShippingTest {
 		log.info("Performing Test:"
 				+ "testShippingLabel - Testing for the successful creation of a default ShippingLabel object.");
 		if (mailingaddress != null) {
-			log.info("Status: " + "PASSED - with value " + mailingaddress);
+			log.debug("Status: " + "PASSED - with value " + mailingaddress);
 			assertTrue(true);
 		} else {
 			log.warn("Status: "
@@ -59,7 +59,7 @@ public class ShippingTest {
 		log.info("Performing Test:"
 				+ "testShippingLabelMailingAddressMailingAddress - Testing for the successful creation of a parameterized ShippingLabel object as two instructors from Athabasca University.");
 		if (shippinglabel != null) {
-			log.info("Status: " + "PASSED - with value " + shippinglabel);
+			log.debug("Status: " + "PASSED - with value " + shippinglabel);
 			assertTrue(true);
 		} else {
 			log.warn("Status: "
@@ -79,7 +79,7 @@ public class ShippingTest {
 		ShippingLabel.main(new String[] {});
 		log.info("Performing Test:" + "testMain - Testing for execution of genereic execution of main method");
 		if (true) {
-			log.info("Status: " + "PASSED - " + "successful execution of main method");
+			log.debug("Status: " + "PASSED - " + "successful execution of main method");
 			assertTrue(true);
 		} else {
 			log.warn("Status: " + "FAILED"
@@ -98,7 +98,7 @@ public class ShippingTest {
 		log.info("Performing Test:"
 				+ "testToString - Testing for testing successful overriding of the toString method for readable content");
 		if (true) {
-			log.info("Status: " + "PASSED - with value " + shippinglabel);
+			log.debug("Status: " + "PASSED - with value " + shippinglabel);
 			assertTrue(true);
 		} else {
 			log.warn("Status: "

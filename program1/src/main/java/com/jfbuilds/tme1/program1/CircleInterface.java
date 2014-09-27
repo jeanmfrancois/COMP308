@@ -54,11 +54,11 @@ public interface CircleInterface {
 	public void printAttributes();
 
 	/**
-	 * Returns a String with the coordinates, the radius, the circumference, and
-	 * the area of a Circle object
+	 * Coordinates, the radius, the circumference, and the area of a Circle
+	 * object
 	 * 
-	 * @return details of Circle object including center point, radius,
-	 *         circumference, and area
+	 * @return {@code String} details of Circle object including center point,
+	 *         radius, circumference, and area
 	 */
 	public String getAttributes();
 
@@ -69,7 +69,8 @@ public interface CircleInterface {
 	 *            horizontal point coordinate
 	 * @param y
 	 *            vertical point coordinate
-	 * @return whether the point is inside the circle
+	 * @return {@code true} the point is inside the circle<br>
+	 *         {@code false} the point is <b>not</b> inside the circle
 	 */
 	public boolean isInside(double x, double y);
 

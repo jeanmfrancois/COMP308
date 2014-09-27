@@ -31,7 +31,7 @@ public class FullNameTest {
 	public void testFullName() {
 		log.info("Performing Test:" + "testFullName - Test whether a Default FullName object is created successfully");
 		if (new FullName() != null) {
-			log.info("Status: " + "PASSED - with value set as " + new FullName());
+			log.debug("Status: " + "PASSED - with value set as " + new FullName());
 			assertTrue(true);
 		} else {
 			log.warn("Status: " + "FAILED" + " - Test: testFullName -> Failed to create a full name object");
@@ -50,7 +50,7 @@ public class FullNameTest {
 		log.info("Performing Test:"
 				+ "testFullNameStringStringStringString - Test the creation of a parameterized full name: Jean Mario Nepton");
 		if (fullname != null) {
-			log.info("Status: " + "PASSED - with value set as " + fullname);
+			log.debug("Status: " + "PASSED - with value set as " + fullname);
 			assertTrue(true);
 		} else {
 			log.warn("Status: "
@@ -69,7 +69,7 @@ public class FullNameTest {
 		log.info("Performing Test:"
 				+ "testToString - Test that the toString method return a readable representation of a person: John Doe");
 		if (true) {
-			log.info("Status: " + "PASSED with value set as " + fullname);
+			log.debug("Status: " + "PASSED with value set as " + fullname);
 			assertTrue(true);
 		} else {
 			log.warn("Status: " + "FAILED"

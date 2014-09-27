@@ -9,21 +9,21 @@ The entry point for any Java Application is the main method, public static void 
 
 Unit 2
 Q:
-What are the functions of the static keyword? (See TIJ pages 76 to 78.)
+What are the functions of the static keyword? 
 
 A:
-// TODO
+The core purpose of the static keyword is for a particular field or method to not tied to any particular object instance of that class and allows the field or method to be accessed without create an instance of that class. Two main functions preformed in respect to the static keyword would be if you only wanted to allocate a single piece of storage to a field, regardless of how many instances you have and another would be if you wanted to use a method which is not associated to any particular instance, thus making it static.
 
 Unit 3
 Q:
-How is the keyword this used in Java? (See TIJ pages 167 to 168.)
+How is the keyword this used in Java? 
 
 A:
-// TODO
+This "this" keyword is used to access the referencing object in which the method has been called from within any non-static method.
 
 Unit 4
 Q:
-How does a method in a derived class affect a method in a base class with the same name but a different signature? (See TIJ pages 255 to 256.)
+How does a method in a derived class affect a method in a base class with the same name but a different signature? 
 
 A:
-// TODO
+A method which overloads (having a method in a base class with the same name but different signatures) does not hide the base class implementation as in C++ but instead offers a new implementation.

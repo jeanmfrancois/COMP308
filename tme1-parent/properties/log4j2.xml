@@ -39,7 +39,7 @@
 		<Logger name="com.jfbuilds.tme1.program3.RidingTests" level="debug">
 			<AppenderRef ref="file-program3" />
 		</Logger>
-		<Logger name="com.jfbuilds.tme1.program4.InstrumentsTests" level="debug">
+		<Logger name="com.jfbuilds.tme1.program4.InstrumentTests" level="debug">
 			<AppenderRef ref="file-program4" />
 		</Logger>
 		<Root level="warn">

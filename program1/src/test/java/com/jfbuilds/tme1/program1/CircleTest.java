@@ -69,7 +69,7 @@ public class CircleTest {
 		log.info("Performing Test:"
 				+ "testCircumference - Testing the circumference method of a default circle to equal Pie*(2r)");
 		if (circle.circumference() == Math.PI * (2 * 8)) {
-			log.info("Status: " + "PASSED - Circumference is calculated correctly");
+			log.debug("Status: " + "PASSED - Circumference is calculated correctly");
 			assertTrue(true);
 		} else {
 			log.warn("Status: " + "FAILED"
@@ -86,7 +86,7 @@ public class CircleTest {
 		Circle circle = new Circle();
 		log.info("Performing Test:" + "testArea - Test if the area of a circle with a radius of 8 will produce 201.06");
 		if (circle.area() == Math.PI * 64) {
-			log.info("Status: " + "PASSED - Area of circle returned " + circle.area());
+			log.debug("Status: " + "PASSED - Area of circle returned " + circle.area());
 			assertTrue(true);
 		} else {
 			log.warn("Status: "
@@ -107,7 +107,7 @@ public class CircleTest {
 		log.info("Performing Test:" + "testSetRadius - Testing method setRadius to set a max value of "
 				+ Circle.MAX_RADIUS + " when given a value to be set of 204");
 		if (circle.r == Circle.MAX_RADIUS) {
-			log.info("Status: " + "PASSED - radius is at max of " + Circle.MAX_RADIUS);
+			log.debug("Status: " + "PASSED - radius is at max of " + Circle.MAX_RADIUS);
 			assertTrue(true);
 		} else {
 			log.warn("Status: " + "FAILED"
@@ -126,7 +126,7 @@ public class CircleTest {
 		log.info("Performing Test:"
 				+ "testIsInside - Test whether a point (12,-12) which should be in a circle with center of (10,-10) and radius of 8 returns true");
 		if (circle.isInside(12, -12) == true) {
-			log.info("Status: " + "PASSED");
+			log.debug("Status: " + "PASSED");
 			assertTrue(true);
 		} else {
 			log.warn("Status: "
@@ -137,7 +137,7 @@ public class CircleTest {
 		log.info("Performing Test:"
 				+ "testIsInside - Test whether a point (-12, 12) which should NOT be in a circle with center of (10,-10) and radius of 8 returns false");
 		if (circle.isInside(-12, 12) == false) {
-			log.info("Status: " + "PASSED");
+			log.debug("Status: " + "PASSED");
 			assertTrue(true);
 		} else {
 			log.warn("Status: "
@@ -148,7 +148,7 @@ public class CircleTest {
 		log.info("Performing Test:"
 				+ "testIsInside - Test whether a point (10, -2) which is on the edge of a circle should NOT be in a circle at point (10, -10) with radius of 8 returns false");
 		if (circle.isInside(10, -2) == false) {
-			log.info("Status: " + "PASSED");
+			log.debug("Status: " + "PASSED");
 			assertTrue(true);
 		} else {
 			log.warn("Status: "
@@ -168,7 +168,7 @@ public class CircleTest {
 		log.info("Performing Test:"
 				+ "testMoveIntInt - Test the move method moves the center by 3 int units on both x and y axis");
 		if (circle.x == 13 && circle.y == -7) {
-			log.info("Status: " + "PASSED - new cordinates are (" + circle.x + "," + circle.y + ")");
+			log.debug("Status: " + "PASSED - new cordinates are (" + circle.x + "," + circle.y + ")");
 			assertTrue(true);
 		} else {
 			log.warn("Status: " + "FAILED"
@@ -188,7 +188,7 @@ public class CircleTest {
 		log.info("Performing Test:"
 				+ "testMoveDoubleDouble - Test the move method moves the center by -4.0 double units on both x and y axis");
 		if (circle.x == 6 && circle.y == -14) {
-			log.info("Status: " + "PASSED - new cordinates are (" + circle.x + "," + circle.y + ")");
+			log.debug("Status: " + "PASSED - new cordinates are (" + circle.x + "," + circle.y + ")");
 			assertTrue(true);
 		} else {
 			log.warn("Status: " + "FAILED"
