@@ -1,11 +1,12 @@
 /**
- * File Name: Circle.java Jean-francois Nepton COMP 308 Java for Programmers
- * Cordinator: Dr. Xiaokun Zhang Student ID# 2358976 Created: Sep 16, 2014
+ * File Name: Circle.java<br>
+ * Jean-francois Nepton<br>
+ * COMP 308 Java for Programmers<br>
+ * Cordinator: Dr. Xiaokun Zhang<br>
+ * Student ID# 2358976<br>
+ * Created: Sep 16, 2014
  */
 package com.jfbuilds.tme1.program1;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 /**
  * Circle represents a simple shape of Euclidean geometry that is the set of all
@@ -23,11 +24,6 @@ import org.apache.logging.log4j.Logger;
  * @since 1.0
  */
 public class Circle implements CircleInterface {
-
-	/**
-	 * Logger for attribute information
-	 */
-	static final Logger log = LogManager.getLogger(Circle.class);
 
 	/**
 	 * Maximum radius allowed
@@ -97,7 +93,7 @@ public class Circle implements CircleInterface {
 	 */
 	@Override
 	public void printAttributes() {
-		log.info(getAttributes());
+		System.out.println(getAttributes());
 	}
 
 	/**

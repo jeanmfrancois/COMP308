@@ -1,16 +1,23 @@
 /**
- * File Name: MailingAddress.java Jean-francois Nepton COMP 308 Java for
- * Programmers Cordinator: Dr. Xiaokun Zhang Student ID# 2358976 Created: Sep
- * 19, 2014
+ * File Name: MailingAddress.java<br>
+ * Jean-francois Nepton<br>
+ * COMP 308 Java for Programmers<br>
+ * Cordinator: Dr. Xiaokun Zhang<br>
+ * Student ID# 2358976<br>
+ * Created: Sep 19, 2014
  */
 package com.jfbuilds.tme1.program2;
 
 /**
- * MailingAddress (description of class)
+ * MailingAddress class represents an address to be used in a shipping label.
  * <p>
- * (description of core fields)
+ * Fields represents an address of up to two lines, a city, province, postal
+ * code, and an Object of type FullName which represents a person's full name.
  * <p>
- * (description of core methods)
+ * Methods include a default constructor which creates a default address with a
+ * default FullName object of a person, John Doe. It also includes a
+ * parameterized constructor and an overriden method of toString to offer a
+ * textual representation of a mailing address.
  * 
  * @author Jean-francois Nepton
  * @version %I%, %G%
@@ -30,8 +37,8 @@ public class MailingAddress {
 
 	private String postalCode;
 
-	/*
-	 * Default Constructor which creates John Doe in the Parliment
+	/**
+	 * Default Constructor which creates John Doe in the Parliment of Canada.
 	 */
 	public MailingAddress() {
 		contact = new FullName();
@@ -42,11 +49,14 @@ public class MailingAddress {
 		postalCode = "K1A 0A9";
 	}
 
-	/*
+	/**
 	 * Parameterized Constructor which takes a supplied name
+	 * 
 	 * @param contact
+	 *            FullName object which represents a person.
 	 * @param addressLine1
 	 * @param addressLine2
+	 *            Optional address line to be included in address
 	 * @param city
 	 * @param province
 	 * @param postalCode
@@ -61,8 +71,10 @@ public class MailingAddress {
 		this.postalCode = postalCode;
 	}
 
-	/*
+	/**
 	 * Overriden implementation of the String value of a MailingAddress object
+	 * 
+	 * @return readable representation string of mailing address details
 	 */
 	@Override
 	public String toString() {

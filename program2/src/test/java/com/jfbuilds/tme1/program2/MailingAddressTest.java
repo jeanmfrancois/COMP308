@@ -5,10 +5,10 @@
  */
 package com.jfbuilds.tme1.program2;
 
+import static com.jfbuilds.tme1.program2.MailingTests.log;
+import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 
 /**
@@ -30,14 +30,17 @@ public class MailingAddressTest {
 	 */
 	@Test
 	public void testMailingAddress() {
-		Logger log = LogManager.getLogger("com.jfbuilds.tme1.program2");
-		log.info("Performing Test:" + "testMailingAddress - ");
-		if (true) {
-			assert (true);
+		MailingAddress mailingaddress = new MailingAddress();
+		log.info("Performing Test:"
+				+ "testMailingAddress - Testing for the successful creation of a default mailing address with an Ottawa address");
+		if (mailingaddress != null) {
+			log.info("Status: " + "PASSED - with value:\n" + mailingaddress);
+			assertTrue(true);
 		} else {
-			fail("failMessage");
+			log.warn("Status: " + "FAILED"
+					+ " - Test: testMailingAddress -> Failed test for creation of a deafult address");
+			fail("Failure for the creation of a deafult address");
 		}
-		// TODO
 	}
 
 	/**
@@ -47,14 +50,20 @@ public class MailingAddressTest {
 	 */
 	@Test
 	public void testMailingAddressFullNameStringStringStringStringString() {
-		Logger log = LogManager.getLogger("com.jfbuilds.tme1.program2");
-		log.info("Performing Test:" + "testMailingAddressFullNameStringStringStringStringString - ");
-		if (true) {
-			assert (true);
+		MailingAddress mailingaddress =
+				new MailingAddress(new FullName("Mrs.", "Olive", "L.", "Smith"), "1 University Dr.", "Suite 666",
+						"Athabasca", "Alberta", "T9S 3A3");
+		log.info("Performing Test:"
+				+ "testMailingAddressFullNameStringStringStringStringString - Testing for the successful creation of a MailingAddress: Mrs. Olive L. Smith, 1 University Dr., Suite 666, Athabasca, Alberta T9S 3A3");
+		if (mailingaddress != null) {
+			log.info("Status: " + "PASSED - with value:\n" + mailingaddress);
+			assertTrue(true);
 		} else {
-			fail("failMessage");
+			log.warn("Status: "
+					+ "FAILED"
+					+ " - Test: testMailingAddressFullNameStringStringStringStringString -> Failed test for the successful creation of a MailingAddress: Mrs. L. Smith, 1 University Dr, Suite 666, Athabasca, AB T9S 3A3");
+			fail("Failure for the successful creation of a MailingAddress: Mrs. L. Smith, 1 University Dr, Suite 666, Athabasca, AB T9S 3A3");
 		}
-		// TODO
 	}
 
 	/**
@@ -63,12 +72,15 @@ public class MailingAddressTest {
 	 */
 	@Test
 	public void testToString() {
-		Logger log = LogManager.getLogger("com.jfbuilds.tme1.program2");
-		log.info("Performing Test:" + "testToString - ");
+		MailingAddress mailingaddress = new MailingAddress();
+		log.info("Performing Test:" + "testToString - Testing for the overriding of the default toString method");
 		if (true) {
-			assert (true);
+			log.info("Status: " + "PASSED - with value:\n" + mailingaddress);
+			assertTrue(true);
 		} else {
-			fail("failMessage");
+			log.warn("Status: " + "FAILED"
+					+ " - Test: testToString -> Failed test for the overriding of the default toString method");
+			fail("Failure for the overriding of the default toString method");
 		}
 	}
 }

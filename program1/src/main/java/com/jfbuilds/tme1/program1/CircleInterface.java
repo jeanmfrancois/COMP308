@@ -1,7 +1,10 @@
 /**
- * File Name: CircleInterface.java Jean-francois Nepton COMP 308 Java for
- * Programmers Cordinator: Dr. Xiaokun Zhang Student ID# 2358976 Created: Sep
- * 18, 2014
+ * File Name: CircleInterface.java<br>
+ * Jean-francois Nepton<br>
+ * COMP 308 Java for Programmers<br>
+ * Cordinator: Dr. Xiaokun Zhang<br>
+ * Student ID# 2358976<br>
+ * Created: Sep 18, 2014
  */
 package com.jfbuilds.tme1.program1;
 
@@ -21,11 +24,16 @@ public interface CircleInterface {
 
 	/**
 	 * Circumference of the circle
+	 * 
+	 * @return the circumference of Circle object calculated as PI * (2 *
+	 *         radius)
 	 */
 	public double circumference();
 
 	/**
 	 * Area of the circle
+	 * 
+	 * @return the area of Circle object calculated as PI * (radius * radius)
 	 */
 	public double area();
 
@@ -48,6 +56,9 @@ public interface CircleInterface {
 	/**
 	 * Returns a String with the coordinates, the radius, the circumference, and
 	 * the area of a Circle object
+	 * 
+	 * @return details of Circle object including center point, radius,
+	 *         circumference, and area
 	 */
 	public String getAttributes();
 
@@ -58,6 +69,7 @@ public interface CircleInterface {
 	 *            horizontal point coordinate
 	 * @param y
 	 *            vertical point coordinate
+	 * @return whether the point is inside the circle
 	 */
 	public boolean isInside(double x, double y);
 

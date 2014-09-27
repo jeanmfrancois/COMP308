@@ -6,10 +6,9 @@
 package com.jfbuilds.tme1.program2;
 
 import static com.jfbuilds.tme1.program2.MailingTests.log;
+import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 
 /**
@@ -31,12 +30,17 @@ public class ShippingTest {
 	 */
 	@Test
 	public void testShippingLabel() {
-		// Logger log = LogManager.getLogger("com.jfbuilds.tme1.program2");
-		log.info("Performing Test:" + "testShippingLabel - ");
-		if (true) {
-			assert (true);
+		MailingAddress mailingaddress = new MailingAddress();
+		log.info("Performing Test:"
+				+ "testShippingLabel - Testing for the successful creation of a default ShippingLabel object.");
+		if (mailingaddress != null) {
+			log.info("Status: " + "PASSED - with value " + mailingaddress);
+			assertTrue(true);
 		} else {
-			fail("failMessage");
+			log.warn("Status: "
+					+ "FAILED"
+					+ " - Test: testShippingLabel -> Failed test for the successful creation of a default ShippingLabel object.");
+			fail("Failure for the successful creation of a default ShippingLabel object.");
 		}
 	}
 
@@ -47,12 +51,21 @@ public class ShippingTest {
 	 */
 	@Test
 	public void testShippingLabelMailingAddressMailingAddress() {
-		// Logger log = LogManager.getLogger("com.jfbuilds.tme1.program2");
-		log.info("Performing Test:" + "testShippingLabelMailingAddressMailingAddress - ");
-		if (true) {
-			assert (true);
+		ShippingLabel shippinglabel =
+				new ShippingLabel(new MailingAddress(new FullName("Dr.", "Xiaokun", "", "Zhang"),
+						"Athabasca University", "1 University Dr.", "Athabasca", "Alberta", "T9S 3A3"),
+						new MailingAddress(new FullName("Mr.", "Jean-francois", "M.", "Nepton"),
+								"941-2 Chemin Montreal Ouest", "", "Gatineau", "Quebec", "J8P 2B8"));
+		log.info("Performing Test:"
+				+ "testShippingLabelMailingAddressMailingAddress - Testing for the successful creation of a parameterized ShippingLabel object as two instructors from Athabasca University.");
+		if (shippinglabel != null) {
+			log.info("Status: " + "PASSED - with value " + shippinglabel);
+			assertTrue(true);
 		} else {
-			fail("failMessage");
+			log.warn("Status: "
+					+ "FAILED"
+					+ " - Test: testShippingLabelMailingAddressMailingAddress -> Failed test for the successful creation of a parameterized ShippingLabel object as two instructors from Athabasca University.");
+			fail("Failure for the successful creation of a parameterized ShippingLabel object as two instructors from Athabasca University.");
 		}
 	}
 
@@ -63,14 +76,15 @@ public class ShippingTest {
 	 */
 	@Test
 	public void testMain() {
-		Logger log = LogManager.getLogger("com.jfbuilds.tme1.program2");
-		log.info("Performing Test:" + "testMain - ");
+		ShippingLabel.main(new String[] {});
+		log.info("Performing Test:" + "testMain - Testing for execution of genereic execution of main method");
 		if (true) {
-			log.info("Status: " + "PASSED");
-			assert (true);
+			log.info("Status: " + "PASSED - " + "successful execution of main method");
+			assertTrue(true);
 		} else {
-			log.warn("Status: " + "FAILED" + " - Test: testMain -> Incorrect use of a test");
-			fail("Incorrect use of a test");
+			log.warn("Status: " + "FAILED"
+					+ " - Test: testMain -> Failed test for execution of genereic execution of main method");
+			fail("Failure for execution of genereic execution of main method");
 		}
 	}
 
@@ -80,14 +94,17 @@ public class ShippingTest {
 	 */
 	@Test
 	public void testToString() {
-		// Logger log = LogManager.getLogger("com.jfbuilds.tme1.program2");
-		log.info("Performing Test:" + "testToString - ");
+		ShippingLabel shippinglabel = new ShippingLabel();
+		log.info("Performing Test:"
+				+ "testToString - Testing for testing successful overriding of the toString method for readable content");
 		if (true) {
-			log.info("Status: " + "PASSED");
-			assert (true);
+			log.info("Status: " + "PASSED - with value " + shippinglabel);
+			assertTrue(true);
 		} else {
-			log.warn("Status: " + "FAILED" + " - Test: testToString");
-			fail("failMessage");
+			log.warn("Status: "
+					+ "FAILED"
+					+ " - Test: testToString -> Failed test for testing successful overriding of the toString method for readable content");
+			fail("Failure for testing successful overriding of the toString method for readable content");
 		}
 	}
 }

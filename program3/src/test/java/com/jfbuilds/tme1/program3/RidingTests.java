@@ -5,6 +5,8 @@
  */
 package com.jfbuilds.tme1.program3;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
@@ -23,4 +25,6 @@ import org.junit.runners.Suite.SuiteClasses;
 @RunWith(Suite.class)
 @SuiteClasses({ CycleTest.class })
 public class RidingTests {
+
+	public static final Logger log = LogManager.getLogger(RidingTests.class);
 }
